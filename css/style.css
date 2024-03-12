@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Set body height to viewport height */
+}
+
+/* Define CSS variables for title, h2, and h3 */
+:root {
+    --pageTitleColor: white;
+    --pageTitleFontSize: 40px;
+    --pageHeadingColor: white;
+    --pageHeadingFontSize: 20px;
+    --mapHeadingColor: white;
+    --mapHeadingFontSize: 30px;
+}
+
+/* Apply styles to the title, h2, and h3 */
+#pageTitle {
+    color: var(--pageTitleColor);
+    font-size: var(--pageTitleFontSize);
+}
+
+#pageHeading {
+    color: var(--pageHeadingColor);
+    font-size: var(--pageHeadingFontSize);
+}
+
+#mapHeading1, #mapHeading2 {
+    color: var(--mapHeadingColor);
+    font-size: var(--mapHeadingFontSize);
+}
+
+#map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center maps horizontally */
+    margin-top: 5px; /* Add margin at the top to create space */
+}
+
+#map, #map2 {
+    width: 1200px;
+    height: 500px; /* Adjust height as needed */
+    margin-bottom: 20px;
+}
+
+#map-container2 {
+    text-align: center; /* Center the content horizontally */
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    color: black; /* Adjust text color for info box */
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
